@@ -1,12 +1,14 @@
 # Don't forget! This file needs to be 'required' in its spec file
 # See README.md for instructions on how to do this
 def fizzbuzz(int)
-  if int % 3 == 0
-    puts "fizz"
+  if int % 3 == 0 &&  int % 5 == 0
+    puts "fizzbuzz"
     if int % 5 == 0
       puts "buzz"
-    else int % 5 == 0 || int % 3 == 0
-      puts "fizzbuzz"
+    if int % 3 == 0
+      puts "fizz"
+end
+end
 end
 end
 fizzbuzz (3)
